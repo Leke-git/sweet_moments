@@ -199,20 +199,32 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                 <button
                   key={type.id}
                   onClick={() => updateActiveItem({ selectedCakeType: type.id })}
-                  className={`relative p-6 rounded-3xl border-2 text-left transition-all ${
+                  className={`relative overflow-hidden rounded-3xl border-2 text-left transition-all ${
                     activeItem.selectedCakeType === type.id 
                     ? 'border-primary bg-primary/5 shadow-lg' 
                     : 'border-border hover:border-primary/30 bg-white dark:bg-surface'
                   }`}
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <span className="text-4xl">{type.emoji}</span>
-                    <span className="text-lg font-bold text-primary">From £{type.base_price}</span>
+                  <div className="h-40 w-full relative overflow-hidden">
+                    <img 
+                      src={type.photo} 
+                      alt={type.name} 
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-2xl shadow-sm">
+                      {type.emoji}
+                    </div>
                   </div>
-                  <h4 className="text-xl font-serif italic font-bold text-dark mb-2">{type.name}</h4>
-                  <p className="text-sm text-muted leading-relaxed">{type.description}</p>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="text-xl font-serif italic font-bold text-dark">{type.name}</h4>
+                      <span className="text-lg font-bold text-primary">From £{type.base_price}</span>
+                    </div>
+                    <p className="text-sm text-muted leading-relaxed">{type.description}</p>
+                  </div>
                   {activeItem.selectedCakeType === type.id && (
-                    <div className="absolute top-4 right-4 text-primary">
+                    <div className="absolute top-4 right-4 bg-primary text-white p-1 rounded-full shadow-lg">
                       <Check size={20} />
                     </div>
                   )}
@@ -395,14 +407,14 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={activeItem.customMessage}
                     onChange={(e) => updateActiveItem({ customMessage: e.target.value })}
                     placeholder="e.g. Happy Birthday Eleanor"
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-widest text-muted">Inspiration Image</label>
                   <div className="relative h-48 rounded-3xl border-2 border-dashed border-border flex flex-col items-center justify-center space-y-2 hover:border-primary/50 transition-all cursor-pointer overflow-hidden group">
                     {activeItem.inspirationUrl ? (
-                      <img src={activeItem.inspirationUrl} className="w-full h-full object-cover" />
+                      <img src={activeItem.inspirationUrl} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     ) : (
                       <>
                         <ImageIcon size={32} className="text-muted" />
@@ -435,7 +447,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
               <div className="relative aspect-square rounded-[3rem] overflow-hidden bg-white dark:bg-black/20 border border-border flex items-center justify-center">
                 {activeItem.mockupUrl ? (
                   <div className="relative w-full h-full group">
-                    <img src={activeItem.mockupUrl} className="w-full h-full object-cover animate-fade-in" />
+                    <img src={activeItem.mockupUrl} className="w-full h-full object-cover animate-fade-in" referrerPolicy="no-referrer" />
                     <div className="absolute bottom-6 left-6 right-6 p-4 glass rounded-2xl border border-white/20 flex justify-between items-center">
                       <span className="text-xs font-bold uppercase tracking-widest text-dark">AI Mockup</span>
                       <div className="flex space-x-2">
@@ -525,7 +537,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                       value={formData.deliveryDate}
                       onChange={(e) => setFormData(prev => ({ ...prev, deliveryDate: e.target.value }))}
                       min={format(addDays(new Date(), config.min_days_notice), 'yyyy-MM-dd')}
-                      className="w-full pl-12 pr-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                      className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                     />
                   </div>
                 </div>
@@ -540,7 +552,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                         onChange={(e) => setFormData(prev => ({ ...prev, deliveryAddress: e.target.value }))}
                         placeholder="Enter full address..."
                         rows={3}
-                        className="w-full pl-12 pr-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
+                        className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
                       />
                     </div>
                   </div>
@@ -555,7 +567,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerName}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerName: e.target.value }))}
                     placeholder="e.g. Eleanor Vance"
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -565,7 +577,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerEmail}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerEmail: e.target.value }))}
                     placeholder="eleanor@example.com"
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -575,7 +587,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerPhone}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerPhone: e.target.value }))}
                     placeholder="+44 7000 000000"
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
               </div>
@@ -595,7 +607,14 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                   <div key={idx} className="bg-white dark:bg-surface p-8 rounded-[2.5rem] border border-border shadow-sm space-y-6">
                     <div className="flex justify-between items-start">
                       <div className="flex items-center space-x-4">
-                        <span className="text-4xl">{config.cake_types.find(t => t.id === item.selectedCakeType)?.emoji}</span>
+                        <div className="w-16 h-16 rounded-xl overflow-hidden border border-border">
+                          <img 
+                            src={config.cake_types.find(t => t.id === item.selectedCakeType)?.photo} 
+                            alt="Cake" 
+                            className="w-full h-full object-cover"
+                            referrerPolicy="no-referrer"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-2xl font-serif italic font-bold text-dark">
                             {config.cake_types.find(t => t.id === item.selectedCakeType)?.name}
@@ -781,7 +800,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
               
               {activeItem.mockupUrl && (
                 <div className="rounded-[2.5rem] overflow-hidden border border-border shadow-xl animate-fade-in">
-                  <img src={activeItem.mockupUrl} className="w-full h-48 object-cover" />
+                  <img src={activeItem.mockupUrl} className="w-full h-48 object-cover" referrerPolicy="no-referrer" />
                   <div className="p-4 bg-white dark:bg-surface text-center">
                     <span className="text-[10px] uppercase tracking-widest text-muted font-bold">AI Visual Mockup</span>
                   </div>

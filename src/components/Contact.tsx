@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
                   <Mail size={20} />
                   <h4 className="font-bold uppercase tracking-widest text-xs">Email Us</h4>
                 </div>
-                <p className="text-muted">bn.gbemileke@gmail.com</p>
+                <p className="text-muted">hello@sweetmoments.com</p>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-primary">
@@ -122,7 +122,7 @@ export const Contact: React.FC = () => {
                       name="name"
                       type="text"
                       placeholder="Your name"
-                      className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                      className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                     />
                   </div>
                   <div className="space-y-2">
@@ -132,7 +132,7 @@ export const Contact: React.FC = () => {
                       name="email"
                       type="email"
                       placeholder="Your email"
-                      className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                      className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                     />
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export const Contact: React.FC = () => {
                     name="subject"
                     type="text"
                     placeholder="What are you enquiring about?"
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -153,7 +153,7 @@ export const Contact: React.FC = () => {
                     name="message"
                     rows={4}
                     placeholder="Tell us about your event..."
-                    className="w-full px-6 py-4 rounded-2xl bg-bg dark:bg-black/20 border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
                   />
                 </div>
                 <button

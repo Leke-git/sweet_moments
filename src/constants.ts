@@ -1,13 +1,13 @@
 import { SiteConfig, BusinessConfig } from './types';
 
 export const ADMIN_EMAILS = [
-  'bn.gbemileke@gmail.com',
+  'hello@sweetmoments.com',
   'lekingsononpoint@gmail.com'
 ];
 
 export const DEFAULT_BUSINESS_CONFIG: BusinessConfig = {
   bakeryName: "Sweet Moments",
-  contactEmail: "bn.gbemileke@gmail.com",
+  contactEmail: "hello@sweetmoments.com",
   announcement: "Welcome to our new automated bakery experience!",
   isMaintenance: false,
   openingHours: "Mon-Fri: 9am - 5pm, Sat: 10am - 4pm",
@@ -33,11 +33,11 @@ export const GALLERY_CATEGORIES = [
     category: 'Ethereal Elegance',
     description: 'Bespoke tiered creations designed to be the centerpiece of your forever.',
     images: [
-      'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1522673607200-164883eecd18?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=1200',
+      'input_file_2.png', // Naked tiered cake with berries
+      'https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=1200', // Classic tiered wedding cake
+      'https://images.unsplash.com/photo-1519340241574-2dec4992408e?auto=format&fit=crop&q=80&w=1200', // Floral wedding cake
+      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1200', // Elegant white wedding cake
+      'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=1200', // Tiered cake with flowers
     ],
   },
   {
@@ -46,11 +46,11 @@ export const GALLERY_CATEGORIES = [
     category: 'Professional Poise',
     description: 'Elevating brand milestones and corporate gatherings with sophisticated, branded designs.',
     images: [
-      'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1200',
+      'input_file_6.png', // Assortment of mini cakes
+      'input_file_9.png', // Drip cake with cookies
+      'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=1200', // Professional event cake
+      'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1200', // Corporate celebration cake
+      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200', // Branded event cake
     ],
   },
   {
@@ -59,11 +59,11 @@ export const GALLERY_CATEGORIES = [
     category: 'Vibrant Celebrations',
     description: 'Transforming personal stories into edible art for every milestone.',
     images: [
-      'https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1530103578275-2d12f3cc0ff6?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1200',
+      'input_file_2.png', // Naked tiered cake with candles
+      'input_file_0.png', // Red velvet layer cake
+      'input_file_4.png', // Slice of chocolate cake
+      'input_file_9.png', // Drip cake with cookies
+      'input_file_5.png', // Chocolate strawberry layer cake
     ],
   },
   {
@@ -72,11 +72,11 @@ export const GALLERY_CATEGORIES = [
     category: 'Timeless Romance',
     description: 'Celebrating the journey of love with refined, intimate designs.',
     images: [
-      'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1525138016235-91982283946c?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=1200',
+      'input_file_3.png', // Small layer cake with strawberries and tea
+      'input_file_8.png', // Chocolate raspberry layer cake
+      'input_file_7.png', // Red velvet cupcake with heart
+      'input_file_5.png', // Chocolate strawberry layer cake
+      'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200', // Romantic cake
     ],
   },
 ];
@@ -84,21 +84,21 @@ export const GALLERY_CATEGORIES = [
 export const REVIEWS = [
   {
     name: "Eleanor Vance",
-    cakeImage: "https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=600",
+    cakeImage: "input_file_2.png", // Naked tiered cake
     clientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "The wedding cake was a masterpiece. Sarah captured our vision perfectly with the hand-pressed florals.",
   },
   {
     name: "Julian Brooks",
-    cakeImage: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=600",
+    cakeImage: "input_file_0.png", // Red velvet cake
     clientImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "Never had a cake that tasted as good as it looked. The Madagascar Vanilla is out of this world.",
   },
   {
     name: "Sienna Miller",
-    cakeImage: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600",
+    cakeImage: "input_file_3.png", // Strawberry cake
     clientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "An anniversary cake that made my wife cry tears of joy. Minimalist but so full of character.",
@@ -122,7 +122,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Classic Round',
       base_price: 65,
       emoji: '🎂',
-      photo: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=600',
+      photo: 'input_file_0.png',
       description: 'The timeless choice for any celebration. Available in single or double layers.',
     },
     {
@@ -130,7 +130,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Tiered Celebration',
       base_price: 180,
       emoji: '🏰',
-      photo: 'https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=600',
+      photo: 'input_file_2.png',
       description: 'Grand, architectural designs for weddings and major milestones.',
     },
     {
@@ -138,7 +138,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Heart Shaped',
       base_price: 75,
       emoji: '❤️',
-      photo: 'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=600',
+      photo: 'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=800',
       description: 'Vintage-inspired lambeth style hearts. Perfect for romance.',
     },
     {
@@ -146,7 +146,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Artisan Cupcakes (x12)',
       base_price: 48,
       emoji: '🧁',
-      photo: 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=600',
+      photo: 'input_file_1.png',
       description: 'Bite-sized masterpieces. Sold in dozens with custom decorations.',
     },
   ],

@@ -55,8 +55,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
             
             <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-surface transform rotate-3">
               <img
-                src="https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=800"
-                alt="Signature Tiered Cake"
+                src="input_file_9.png"
+                alt="White Cake with Chocolate Drip and Cookies"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

@@ -43,8 +43,8 @@ export const About: React.FC = () => {
           >
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-surface transform transition-transform duration-1000 hover:scale-[1.02]">
               <img
-                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&q=80&w=800"
-                alt="Sarah in professional chef uniform"
+                src="https://picsum.photos/seed/sarah/800/1000"
+                alt="Baker Placeholder"
                 className="w-full h-full object-cover animate-fade-in"
                 referrerPolicy="no-referrer"
               />

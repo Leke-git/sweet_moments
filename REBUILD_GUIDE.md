@@ -34,7 +34,7 @@ Set these in your hosting provider (e.g., Vercel):
 ## 🗄️ 3. Supabase SQL Setup
 Run this in the **Supabase SQL Editor** to create the required tables and security policies. 
 
-> **IMPORTANT**: Replace `your@email.com` on line 102 with your actual admin email (e.g. `bn.gbemileke@gmail.com`).
+> **IMPORTANT**: Replace `your@email.com` on line 102 with your actual admin email (e.g. `hello@sweetmoments.com`).
 
 ```sql
 -- 1. Orders Table
