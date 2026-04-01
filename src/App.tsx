@@ -219,7 +219,7 @@ export default function App() {
         <Contact />
       </main>
 
-      <footer className="footer-light dark:bg-black/20 py-20 border-t border-border">
+      <footer className="footer-light dark:bg-surface py-20 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="flex flex-col">
@@ -258,7 +258,7 @@ export default function App() {
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="bg-white border border-border px-4 py-2 rounded-xl text-sm outline-none focus:border-primary w-full text-dark dark:text-white"
+                  className="bg-white dark:bg-black/20 border border-border px-4 py-2 rounded-xl text-sm outline-none focus:border-primary w-full text-dark dark:text-white"
                 />
                 <button className="bg-primary text-white px-4 py-2 rounded-xl text-sm font-bold">Join</button>
               </div>
