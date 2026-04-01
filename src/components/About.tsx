@@ -41,10 +41,10 @@ export const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="relative group"
           >
-            <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-surface transform transition-transform duration-1000 hover:scale-[1.02]">
+            <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-accent/20 dark:border-surface transform transition-transform duration-1000 hover:scale-[1.02]">
               <img
-                src="https://picsum.photos/seed/sarah/800/1000"
-                alt="Baker Placeholder"
+                src="/2150014877.jpg"
+                alt="Sarah in professional chef uniform"
                 className="w-full h-full object-cover animate-fade-in"
                 referrerPolicy="no-referrer"
               />

@@ -407,7 +407,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={activeItem.customMessage}
                     onChange={(e) => updateActiveItem({ customMessage: e.target.value })}
                     placeholder="e.g. Happy Birthday Eleanor"
-                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -444,7 +444,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                   )}
                 </button>
               </div>
-              <div className="relative aspect-square rounded-[3rem] overflow-hidden bg-white dark:bg-black/20 border border-border flex items-center justify-center">
+              <div className="relative aspect-square rounded-[3rem] overflow-hidden bg-white border border-border flex items-center justify-center">
                 {activeItem.mockupUrl ? (
                   <div className="relative w-full h-full group">
                     <img src={activeItem.mockupUrl} className="w-full h-full object-cover animate-fade-in" referrerPolicy="no-referrer" />
@@ -537,7 +537,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                       value={formData.deliveryDate}
                       onChange={(e) => setFormData(prev => ({ ...prev, deliveryDate: e.target.value }))}
                       min={format(addDays(new Date(), config.min_days_notice), 'yyyy-MM-dd')}
-                      className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                      className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                     />
                   </div>
                 </div>
@@ -552,7 +552,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                         onChange={(e) => setFormData(prev => ({ ...prev, deliveryAddress: e.target.value }))}
                         placeholder="Enter full address..."
                         rows={3}
-                        className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
+                        className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all resize-none text-dark dark:text-white"
                       />
                     </div>
                   </div>
@@ -567,7 +567,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerName}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerName: e.target.value }))}
                     placeholder="e.g. Eleanor Vance"
-                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -577,7 +577,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerEmail}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerEmail: e.target.value }))}
                     placeholder="eleanor@example.com"
-                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -587,7 +587,7 @@ export const OrderWizard: React.FC<OrderWizardProps> = ({ config, onClose, userE
                     value={formData.customerPhone}
                     onChange={(e) => setFormData(prev => ({ ...prev, customerPhone: e.target.value }))}
                     placeholder="+44 7000 000000"
-                    className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
+                    className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white"
                   />
                 </div>
               </div>

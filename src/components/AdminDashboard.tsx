@@ -304,7 +304,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all text-dark"
+                className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark"
               />
               {passwordError && <p className="text-red-500 text-xs ml-4 mt-1">{passwordError}</p>}
             </div>
@@ -654,7 +654,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                           type="text"
                           value={config.bakeryName}
                           onChange={(e) => setConfig({...config, bakeryName: e.target.value})}
-                          className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all"
+                          className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all"
                         />
                       </div>
                       <div className="space-y-2">
@@ -663,7 +663,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                           type="email"
                           value={config.contactEmail}
                           onChange={(e) => setConfig({...config, contactEmail: e.target.value})}
-                          className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all"
+                          className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all"
                         />
                       </div>
                     </div>
@@ -674,7 +674,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                         type="text"
                         value={config.announcement}
                         onChange={(e) => setConfig({...config, announcement: e.target.value})}
-                        className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all"
+                        className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all"
                       />
                     </div>
 
@@ -685,7 +685,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                           type="text"
                           value={config.openingHours}
                           onChange={(e) => setConfig({...config, openingHours: e.target.value})}
-                          className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all"
+                          className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all"
                         />
                       </div>
                       <div className="space-y-2">
@@ -694,7 +694,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                           type="text"
                           value={config.deliveryZones}
                           onChange={(e) => setConfig({...config, deliveryZones: e.target.value})}
-                          className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all"
+                          className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all"
                         />
                       </div>
                     </div>
@@ -705,7 +705,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, user, i
                         rows={6}
                         value={config.knowledgeBase}
                         onChange={(e) => setConfig({...config, knowledgeBase: e.target.value})}
-                        className="w-full px-6 py-4 rounded-2xl bg-bg border border-border focus:border-primary outline-none transition-all resize-none"
+                        className="w-full px-6 py-4 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all resize-none"
                         placeholder="Describe your bakery's rules, signature flavors, and ordering requirements for the AI agent..."
                       />
                     </div>

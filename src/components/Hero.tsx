@@ -53,10 +53,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl" />
             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
             
-            <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-surface transform rotate-3">
+            <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border-8 border-accent/20 dark:border-surface transform rotate-3">
               <img
-                src="input_file_9.png"
-                alt="White Cake with Chocolate Drip and Cookies"
+                src="/2150797868.jpg"
+                alt="Bespoke Wedding Cake"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

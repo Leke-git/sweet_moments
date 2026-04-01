@@ -44,7 +44,6 @@ export const Nav: React.FC<NavProps> = ({
           {/* Logo */}
           <div className="flex-shrink-0 flex flex-col">
             <span className="text-2xl font-serif italic font-semibold text-primary leading-tight">{bakeryName}</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-muted font-medium">Artisan Custom Cakes</span>
           </div>
 
           {/* Desktop Nav */}

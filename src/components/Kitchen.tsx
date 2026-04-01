@@ -50,19 +50,24 @@ export const Kitchen: React.FC = () => {
         </div>
 
         {/* Video Section */}
-        <div className="mt-20 relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white dark:border-surface aspect-video">
+        <div className="mt-20 relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-accent/20 dark:border-surface aspect-video">
           <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-10">
             <div className="text-center text-white space-y-4">
-              <h3 className="text-4xl font-serif italic font-bold">The Kitchen</h3>
-              <p className="uppercase tracking-[0.3em] text-xs font-bold">Artistry in Motion</p>
+              <h3 className="text-4xl font-serif italic font-bold">Sarah in the Kitchen</h3>
+              <p className="uppercase tracking-[0.3em] text-xs font-bold">A glimpse into the magic</p>
             </div>
           </div>
-          <img 
-            src="https://picsum.photos/seed/kitchen/1200/800"
-            alt="Kitchen Placeholder"
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="auto"
+            poster="/2150797868.jpg"
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
+          >
+            <source src="/6314200_Person_People_1280x720.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>

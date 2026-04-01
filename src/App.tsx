@@ -27,7 +27,29 @@ export default function App() {
   const [user, setUser] = React.useState<User | null>(null);
   const [cakeConfig, setCakeConfig] = React.useState<SiteConfig>(DEFAULT_CONFIG);
   const [businessConfig, setBusinessConfig] = React.useState<BusinessConfig>(DEFAULT_BUSINESS_CONFIG);
-  const [faqs, setFaqs] = React.useState<FAQ[]>([]);
+  const [faqs, setFaqs] = React.useState<FAQ[]>([
+    {
+      id: '1',
+      question: 'How far in advance should I order?',
+      answer: 'We recommend ordering at least 7 days in advance for standard cakes and 2-4 weeks for wedding or large custom orders.',
+      category: 'ordering',
+      order_index: 0
+    },
+    {
+      id: '2',
+      question: 'Do you offer delivery?',
+      answer: 'Yes, we deliver across London (Zones 1-4) and SE postcodes. Delivery fees are calculated at checkout.',
+      category: 'delivery',
+      order_index: 1
+    },
+    {
+      id: '3',
+      question: 'Can you cater to dietary requirements?',
+      answer: 'We offer Gluten-Free, Vegan, and Dairy-Free options. While we take every precaution, our kitchen handles nuts and other allergens.',
+      category: 'dietary',
+      order_index: 2
+    }
+  ]);
   const [loading, setLoading] = React.useState(true);
   
   const [showOrderModal, setShowOrderModal] = React.useState(false);
@@ -114,7 +136,7 @@ export default function App() {
 
           // Load FAQs
           const faqsResponse = await supabase.from('faqs').select('*').order('order_index');
-          if (faqsResponse.data) {
+          if (faqsResponse.data && faqsResponse.data.length > 0) {
             setFaqs(faqsResponse.data);
           }
         }
@@ -154,9 +176,7 @@ export default function App() {
     }
   };
 
-  React.useEffect(() => {
-    console.log("Admin Dashboard link rendered in footer. Click to open.");
-  }, []);
+
 
   if (loading) {
     return (
@@ -238,7 +258,7 @@ export default function App() {
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="bg-bg dark:bg-black/20 border border-border px-4 py-2 rounded-xl text-sm outline-none focus:border-primary w-full text-dark dark:text-white"
+                  className="bg-white border border-border px-4 py-2 rounded-xl text-sm outline-none focus:border-primary w-full text-dark dark:text-white"
                 />
                 <button className="bg-primary text-white px-4 py-2 rounded-xl text-sm font-bold">Join</button>
               </div>
@@ -254,13 +274,7 @@ export default function App() {
                 Logged in as: {user.email} ({user.role})
               </span>
             )}
-            <button 
-              onClick={() => setShowAdminPanel(true)} 
-              className="group flex items-center space-x-2 px-4 py-2 rounded-full bg-primary/5 hover:bg-primary/10 text-primary transition-all duration-300 border border-primary/10"
-            >
-              <LayoutDashboard size={14} className="group-hover:rotate-12 transition-transform" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em]">Admin Dashboard</span>
-            </button>
+
           </div>
         </div>
       </footer>

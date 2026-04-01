@@ -13,7 +13,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
   const categories = Array.from(new Set(faqs.map(f => f.category)));
 
   return (
-    <section id="faqs" className="py-32 bg-white dark:bg-black/20">
+    <section id="faqs" className="py-32 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-20">
           <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-bold tracking-widest uppercase">
@@ -34,7 +34,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                 {faqs.filter(f => f.category === category).map((faq) => (
                   <div 
                     key={faq.id}
-                    className="group rounded-[2rem] border border-border bg-bg/30 dark:bg-white/5 overflow-hidden transition-all hover:border-primary/30"
+                    className="group rounded-[2rem] border border-border bg-transparent dark:bg-white/5 overflow-hidden transition-all hover:border-primary/30"
                   >
                     <button
                       onClick={() => setOpenId(openId === faq.id ? null : faq.id)}

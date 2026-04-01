@@ -96,7 +96,7 @@ export const ChatWidget: React.FC = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                 placeholder="Ask about flavours, pricing..."
-                className="w-full pl-6 pr-12 py-3 rounded-full bg-white dark:bg-surface border border-border focus:border-primary outline-none text-sm"
+                className="w-full pl-6 pr-12 py-3 rounded-full bg-white border border-border focus:border-primary outline-none text-sm"
               />
               <button 
                 onClick={handleSend}

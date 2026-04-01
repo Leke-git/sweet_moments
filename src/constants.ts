@@ -33,11 +33,9 @@ export const GALLERY_CATEGORIES = [
     category: 'Ethereal Elegance',
     description: 'Bespoke tiered creations designed to be the centerpiece of your forever.',
     images: [
-      'input_file_2.png', // Naked tiered cake with berries
-      'https://images.unsplash.com/photo-1535254973040-607b474cb80d?auto=format&fit=crop&q=80&w=1200', // Classic tiered wedding cake
-      'https://images.unsplash.com/photo-1519340241574-2dec4992408e?auto=format&fit=crop&q=80&w=1200', // Floral wedding cake
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1200', // Elegant white wedding cake
-      'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=1200', // Tiered cake with flowers
+      '/2150797868.jpg',
+      '/2150649466.jpg',
+      '/43087.jpg',
     ],
   },
   {
@@ -46,11 +44,9 @@ export const GALLERY_CATEGORIES = [
     category: 'Professional Poise',
     description: 'Elevating brand milestones and corporate gatherings with sophisticated, branded designs.',
     images: [
-      'input_file_6.png', // Assortment of mini cakes
-      'input_file_9.png', // Drip cake with cookies
-      'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=1200', // Professional event cake
-      'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1200', // Corporate celebration cake
-      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200', // Branded event cake
+      '/43087.jpg',
+      '/7876.jpg',
+      '/9934.jpg',
     ],
   },
   {
@@ -59,11 +55,9 @@ export const GALLERY_CATEGORIES = [
     category: 'Vibrant Celebrations',
     description: 'Transforming personal stories into edible art for every milestone.',
     images: [
-      'input_file_2.png', // Naked tiered cake with candles
-      'input_file_0.png', // Red velvet layer cake
-      'input_file_4.png', // Slice of chocolate cake
-      'input_file_9.png', // Drip cake with cookies
-      'input_file_5.png', // Chocolate strawberry layer cake
+      '/9934.jpg',
+      '/2715.jpg',
+      '/18.jpg',
     ],
   },
   {
@@ -72,11 +66,9 @@ export const GALLERY_CATEGORIES = [
     category: 'Timeless Romance',
     description: 'Celebrating the journey of love with refined, intimate designs.',
     images: [
-      'input_file_3.png', // Small layer cake with strawberries and tea
-      'input_file_8.png', // Chocolate raspberry layer cake
-      'input_file_7.png', // Red velvet cupcake with heart
-      'input_file_5.png', // Chocolate strawberry layer cake
-      'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=1200', // Romantic cake
+      '/3122.jpg',
+      '/4043.jpg',
+      '/265.jpg',
     ],
   },
 ];
@@ -84,21 +76,21 @@ export const GALLERY_CATEGORIES = [
 export const REVIEWS = [
   {
     name: "Eleanor Vance",
-    cakeImage: "input_file_2.png", // Naked tiered cake
+    cakeImage: "/2150797868.jpg",
     clientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "The wedding cake was a masterpiece. Sarah captured our vision perfectly with the hand-pressed florals.",
   },
   {
     name: "Julian Brooks",
-    cakeImage: "input_file_0.png", // Red velvet cake
+    cakeImage: "/9934.jpg",
     clientImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "Never had a cake that tasted as good as it looked. The Madagascar Vanilla is out of this world.",
   },
   {
     name: "Sienna Miller",
-    cakeImage: "input_file_3.png", // Strawberry cake
+    cakeImage: "/3122.jpg",
     clientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200",
     rating: 5,
     comment: "An anniversary cake that made my wife cry tears of joy. Minimalist but so full of character.",
@@ -122,7 +114,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Classic Round',
       base_price: 65,
       emoji: '🎂',
-      photo: 'input_file_0.png',
+      photo: '/9934.jpg',
       description: 'The timeless choice for any celebration. Available in single or double layers.',
     },
     {
@@ -130,7 +122,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Tiered Celebration',
       base_price: 180,
       emoji: '🏰',
-      photo: 'input_file_2.png',
+      photo: '/2150797868.jpg',
       description: 'Grand, architectural designs for weddings and major milestones.',
     },
     {
@@ -138,7 +130,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Heart Shaped',
       base_price: 75,
       emoji: '❤️',
-      photo: 'https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?auto=format&fit=crop&q=80&w=800',
+      photo: '/18.jpg',
       description: 'Vintage-inspired lambeth style hearts. Perfect for romance.',
     },
     {
@@ -146,7 +138,7 @@ export const DEFAULT_CONFIG: SiteConfig = {
       name: 'Artisan Cupcakes (x12)',
       base_price: 48,
       emoji: '🧁',
-      photo: 'input_file_1.png',
+      photo: '/265.jpg',
       description: 'Bite-sized masterpieces. Sold in dozens with custom decorations.',
     },
   ],

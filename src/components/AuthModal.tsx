@@ -186,7 +186,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="eleanor@example.com"
-                    className="w-full pl-16 pr-6 py-5 rounded-2xl bg-white dark:bg-black/20 border border-border focus:border-primary outline-none transition-all text-dark dark:text-white placeholder:text-muted/50"
+                    className="w-full pl-16 pr-6 py-5 rounded-2xl bg-white border border-border focus:border-primary outline-none transition-all text-dark dark:text-white placeholder:text-muted/50"
                   />
                 </div>
               </div>
@@ -243,7 +243,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
                     value={code[i] || ''}
                     onChange={(e) => handleCodeChange(i, e.target.value)}
                     onKeyDown={(e) => handleKeyDown(i, e)}
-                    className="w-16 h-20 rounded-2xl bg-white dark:bg-black/20 border-2 border-border focus:border-primary outline-none transition-all text-center text-3xl font-bold text-dark dark:text-white"
+                    className="w-16 h-20 rounded-2xl bg-white border-2 border-border focus:border-primary outline-none transition-all text-center text-3xl font-bold text-dark dark:text-white"
                   />
                 ))}
               </div>
